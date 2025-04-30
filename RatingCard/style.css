@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #121418;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    position: relative;
+}
+.card{
+    background-color: hsla(215, 27%, 12%, 1);
+    width: 25%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+.card h1{
+    color: white;
+    font-size: x-large;
+}
+.card p{
+    color: hsl(217, 12%, 63%);
+    font-size: smaller;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+.rating div{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: smaller;
+}
+.starIcon{
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+button{
+    width: 100%;
+    padding: 10px ;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: 2px;
+    font-size: small;
+}
+.rating div:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+.rating div.active{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+.secondCard{
+    background-color: hsla(215, 27%, 12%, 1);
+    width: 25%;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    z-index: 0;
+}
+.secondCard p{
+    color: hsl(217, 12%, 63%);
+    font-size: smaller;
+    text-align: center;
+    
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.ThankYouImg{
+    display: flex;
+    justify-content: center;
+}
+h4{
+    background-color: hsl(213, 19%, 18%);
+    width: fit-content;
+    margin: 0 auto;
+    color: hsl(25, 97%, 53%);
+    padding: 5px 10px;
+    font-size: x-small;
+    border-radius: 20px;
+}
+.card.visible{
+    position: absolute;
+    z-index: -1;
+}
