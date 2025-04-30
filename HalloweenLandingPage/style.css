@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/hero-bg.png);
+    background-size:cover;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px
+}
+.barIcon{
+    font-size: x-large;
+    color: hsl(26, 99%, 54%);
+    transition: display 0.5s ease;
+}
+.navLink{
+    display: flex;
+    gap: 40px;
+    font-size: x-small;
+    font-weight: 500;
+    color: hsl(212, 13%, 48%);
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.1s ease;
+}
+.navLink div:hover{
+    color: hsl(26, 99%, 54%) ;
+    cursor: pointer;
+}
+.content{
+    margin-top: 150px;
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+    color: hsl(212, 16%, 16%);
+}
+h1{
+    font-family: "Shadows Into Light", cursive;
+    color: hsl(26, 99%, 54%);
+    font-size: 100px;
+    font-weight: 500;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    color: hsl(212, 16%, 16%);
+    font-weight: 500;
+}
+button{
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 30px;
+    text-align: center;
+    background-color: hsl(179, 41%, 63%);
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: x-small;
+    border-radius: 25px;
+}
+button:hover{
+    background-color: hsl(179, 41%, 43%);
+    cursor: pointer;
+}
+.rotate{
+    transition: transform 0.1s ease;
+    transform: rotate(0deg);
+}
